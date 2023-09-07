@@ -136,8 +136,6 @@ p {
 	padding: 0 10px;
 }
 
-
-
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
@@ -392,8 +390,8 @@ p {
 }
 
 #tools .tool-bottom .icon {
-    height: 60px;
-    width: 60px;
+    height: 45px;
+    width: 45px;
     margin-bottom: 20px;
 }
 
@@ -605,7 +603,7 @@ p {
 #footer .footer {
     min-height: 200px;
     flex-direction: column;
-    padding: 50px 10px;
+    padding: 10px 10px;
     margin: 0 50px;
 }
 
@@ -620,14 +618,14 @@ p {
 
 #footer .social-icon {
     display: flex;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     color: white;
 }
 
 #footer .social-item {
     height: 50px;
     width: 50px;
-    margin: 20px 40px;
+    margin: 10px 40px;
 }
 
 #footer .social-item img {
