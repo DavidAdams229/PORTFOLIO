@@ -598,13 +598,14 @@ p {
 
 #footer {
     background-color: rgb(38, 38, 109);
+
 }
 
 #footer .footer {
     min-height: 200px;
     flex-direction: column;
-    padding: 10px 10px;
-    margin: 0 50px;
+    justify-content: center;
+    align-items: center;
 }
 
 #footer h2 {
