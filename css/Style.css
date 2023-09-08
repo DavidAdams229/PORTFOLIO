@@ -28,14 +28,6 @@ img {
     object-fit: cover;
 }
 
-#mail {
-    color: black;
-}
-
-#address {
-    color: black;
-}
-
 p {
     color: black;
     font-size: 1.4rem;
@@ -89,7 +81,7 @@ p {
 
 .brand h1 {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -106,6 +98,7 @@ p {
     width: 40px;
     margin: 2px;
 }
+
 
 /* header section */
 
@@ -158,7 +151,7 @@ p {
 }
 
 #header .nav-list ul a {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-weight: 500;
     letter-spacing: 0.2rem;
     text-decoration: none;
@@ -238,21 +231,24 @@ p {
 #header .hamburger .bar::after {
 	top: 8px;
 }
+
 #header .hamburger .bar::before {
 	bottom: 8px;
 }
+
 #header .hamburger.active .bar::before {
 	bottom: 0;
 }
+
 #header .hamburger.active .bar::after {
 	top: 0;
 }
-
 
 /*end of header section*/
 
 
 /*main section*/
+
 #main {
     background-image: url(/img/OPEN.png);
     background-size: cover;
@@ -353,6 +349,7 @@ p {
 
 
 /*tools section*/
+
 #tools .tools {
     flex-direction: column;
     text-align: center;
@@ -412,6 +409,7 @@ p {
 
 
 /*project section*/
+
 #projects .projects {
     flex-direction: column;
     max-width: 1200px;
@@ -488,8 +486,8 @@ p {
 /*end of project section*/
 
 
-
 /*about me section*/
+
 #about {
     background-color: rgb(38, 38, 109);
 }
@@ -541,7 +539,9 @@ p {
 
 /*end of about me section*/
 
+
 /*contact section*/
+
 #contact .contact {
     flex-direction: column;
     max-width: 1200px;
@@ -549,19 +549,9 @@ p {
     width: 90%;
 }
 
-#Contact-tittle {
-    font-size: 2.5rem;
-    font-weight: 200;
-    color: rgb(38, 38, 109);
-    margin-bottom: 70px;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    text-align: center;
-}
-
 #contact .contact-items {
 	/* max-width: 400px; */
-	width: 100%;
+	width: 100%; 
 }
 
 #contact .contact-item {
@@ -642,6 +632,7 @@ p {
 
 
 /*key frames */
+
 @keyframes hamburger_animate {
     0% {
         opacity: 1;
@@ -681,7 +672,9 @@ p {
 
 /*end of key frames*/
 
+
 /*media query for tablet */
+
 @media only screen and (min-width:768px) {
 
 
@@ -700,13 +693,14 @@ p {
     }
 
     /*tools section*/
+    
     #tools .tool-bottom .tool-item {
         flex-basis: 45%;
         margin: 2.5%;
     }
 
-
     /*end of tool section*/
+
 
     /*projects section*/
 
@@ -714,7 +708,6 @@ p {
         flex-direction: column;
         max-width: 768px;
     }
-
 
     #projects .project-item {
         flex-direction: row;
@@ -741,6 +734,7 @@ p {
 
     /*end projects section*/
 
+    
     /*about section*/
 
     #about {
@@ -799,6 +793,7 @@ p {
 
     /*end of about section*/
 
+
     /*contact section*/
 
     #contact {
@@ -830,14 +825,13 @@ p {
 		height: 100px;
 		width: 100px;
 	}
+
 	#contact .contact-item .icon img {
 		object-fit: contain;
 	}
 
     /*end of contact section*/
 }
-
-
 
 /* end of media query for tab */
 
@@ -875,5 +869,4 @@ p {
         flex-basis: 22%;
         margin: 1.5%;
     }
-
 }
