@@ -38,10 +38,10 @@ img {
 
 p {
     color: black;
-    font-size: 1.4rem;
+    font-size: 2rem;
     margin-top: 5px;
     line-height: 2.5rem;
-    font-weight: 300;
+    font-weight: 500;
     letter-spacing: 0.05rem;
 }
 
@@ -55,7 +55,7 @@ p {
 
 .tittle {
     font-size: 4rem;
-    font-weight: 300;
+    font-weight: 500;
     color: rgb(38, 38, 109);
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -89,7 +89,7 @@ p {
 
 .brand h1 {
     font-size: 3rem;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
     margin-bottom: 10px;
     text-transform: uppercase;
