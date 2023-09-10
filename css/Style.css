@@ -18,7 +18,6 @@ a {
 
 video {
     height: 100%;
-    width: 100%;
     object-fit: cover;
 }
 
@@ -47,7 +46,7 @@ p {
 
 .tittle {
     font-size: 4rem;
-    font-weight: 800;
+    font-weight: 550;
     color: rgb(38, 38, 109);
     margin-bottom: 10px;
     text-transform: uppercase;
