@@ -250,7 +250,7 @@ p {
 /*main section*/
 
 #main {
-    background-image: url(/img/OPEN.png);
+    background-image: url(./img/OPEN.png);
     background-size: cover;
     background-position: center;
     position: relative;
