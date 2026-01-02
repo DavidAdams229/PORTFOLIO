@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <link rel="stylesheet" href="Style.css">
     <title>TOYE-DEVS</title>
     <link rel="icon" href="images/favicon1.ico" type="image/x-icon">
+=======
+    <title>New portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+>>>>>>> e5ec4bf (Replace old portfolio with new version)
 </head>
-
 <body>
+    <nav id="desktop-nav">
+      <div class="logo">David Adams</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">David Adams</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li> 
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profilepic.png" alt="David Adams Profile picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hi, I'm</p>
+            <h1 class="title">David Adams</h1>
+            <p class="section__text__p2">A Technology, Healthcare IT & Clinical Operations Professional</p>
+            <div class="btn-container">
 
-    <!-- header secttion-->
-    <section id="header">
-        <div class="header container">
-            <div class="nav-bar">
-                <div class="brand">
-                    <a href="#main">
-                        <h1><span>T</span>OYE <span>D</span>EVS</h1>
-                    </a>
-                </div>
-                <div class="nav-list">
-                    <div class="hamburger">
-                        <div class="bar"></div>
-                    </div>
-                    <ul>
-                        <li><a href="#main" data-after="HOME">HOME</a></li>
-                        <li><a href="#tools" data-after="TOOLS">TOOLS</a></li>
-                        <li><a href="#projects" data-after="PROJECTS">PROJECTS</a></li>
-                        <li><a href="#about" data-after="ABOUT">ABOUT</a></li>
-                        <li><a href="#contact" data-after="CONTACTS">CONTACTS</a></li>
-                    </ul>
-                </div>
+                <!-- original
+                <button class="btn btn-color-2" 
+                onclick="window.open('./assets/resume-example.pdf')">
+                Download CV
+                </button>
+                -->
+                
+            
+                <button class="btn btn-color-2" 
+                onclick="location.href='./#contact'">
+                Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My linkedIn profile"
+                class="icon" onclick="location
+                .href='https://www.linkedin.com/in/david-adams-197b5b266/'"/>
+                <img src="./assets/github.png" alt="My github profile"
+                class="icon" onclick="location
+                .href='https://github.com/DavidAdams229'"/>
             </div>
         </div>
     </section>
+<<<<<<< HEAD
 
 
     <!-- End of header secttion-->
@@ -182,89 +222,330 @@
     <!--end of project section-->
 
     <!--about section-->
+=======
+>>>>>>> e5ec4bf (Replace old portfolio with new version)
     <section id="about">
-        <div class="about container">
-            <div class="col-left">
-                <div class="about-image">
-                    <img src="images/aboutpic.JPG" alt="img">
-                </div>
+        <p class="section__text__p1">Get to know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img 
+                src="./assets/about-pic2.png" 
+                alt="Profile picture"
+                class="about-pic"
+                />
             </div>
-            <div class="col-right">
-                <h1 class="tittle" id="AboutMe-tittle">About <span>ME</span></h1>
-                <h2>Front End developer</h2>
-                <p>
-                    My journey began with a passion for both art and technology,
-                    igniting a desire to create something from the ground up while integrating cutting-edge tech.
-                    The tech industry, true to its promise, has offered me a fulfilling career path aligning perfectly with my aspirations. 
-                    As a software developer with over a year of experience, I've relentlessly pursued knowledge and wisdom. Now, the question is, 
-                    would you like me to bring the same dedication and expertise to your team?
-                </p>
-                <a href='mailto:toyedevs@gmail.com'  class="cta">Request Resume</a>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img 
+                        src="./assets/experience.png" 
+                        alt="Experience icon"
+                        class="icon"
+                        />
+                        <h3>Experience</h3>
+                        <p>Healthcare IT, Data & Clincial Operations</b></p>
+                    </div>
+                    <div class="details-container">
+                        <img 
+                        src="./assets/education.png" 
+                        alt="Education icon"
+                        class="icon"
+                        />
+                        <h3>Education</h3>
+                        <p>B.S. Infromation Technology</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>     Healthcare-focused technology professional with 
+                        hands on experience supporting clinical 
+                        operations through data, systems, and workflow analysis.
+                         My background combines hospital operations 
+                        knowledge with analytics and frontend development, 
+                        enabling me to translate complex clinical processes
+                         into clear insights, efficient dashboards, 
+                        and practical solutions that improve patient flow, 
+                        decision-making, and operational performance.
+                    </p>
+                </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location
+        .href='./#experience'"
+        />
     </section>
-
-    <!--end of about section-->
-
-    <!--conatct section-->
-    <section id="contact">
-        <div class="contact container">
-            <div class="tittle" id="Contact-tittle">
-                <h1 class="tittle">REACH <span>OUT</span></h1>
-            </div>
-            <div class="contact-items">
-                <div class="contact-item">
-                    <a href="mailto:toyedevs@gmail.com" style="color: black;" >
-                        <div class="icon"><img src="images/IconGmail.png" alt="image"></div>
-                        <div class="contact-info">
-                            <h1>Email<h1>
-                            <h2>toyedevs@gmail.com</h2>
-                        </div>
-                    </a>
-                </div>
-                <div class="contact-items">
-                    <div class="contact-item">
-                        <a href="https://www.google.com/maps/place/Houston,+TX+77082/@29.6827836,-95.6659556,12z/data=!3m1!4b1!4m6!3m5!1s0x8640dc2e5959178b:0xb5235e5a04b0bfcf!8m2!3d29.7253361!4d-95.6773512!16s%2Fm%2F0213638?hl=en-US&entry=ttu" target="_blank" style="color: black;" >
-                            <div class="icon"><img src="images/IconAddress.png" alt="image"></div>
-                            <div class="contact-info">
-                                <h1>Location<h1>
-                                <h2>Houston, TX 77082</h2>
+    <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers"></div>
+            <div class="about-containers">
+                <!--First section of skills-->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Healthcare IT & Data Analytics</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Power BI</h3>
+                                <P>Dashboard Development</P>
                             </div>
-                        </a>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>SQL</h3>
+                                <P>Data Querying & Analysis</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Excel</h3>
+                                <P>Reporting & Data Modeling</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Healthcare Data</h3>
+                                <P>Clinical Metrics & KPIs</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Workflow Analysis</h3>
+                                <P>Process Improvement</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Frontend Integration</h3>
+                                <P>Data-Driven Interfaces</P>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <!--Second section of skills-->
+                <div class="details-container">
+                    <h2 class="experience-sub-title">Clinical Operations & Systems</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Epic Systems</h3>
+                                <P>Clinical Workflow Support</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Sterile Processing</h3>
+                                <P>OR & Instrument Flow</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Patient Throughput</h3>
+                                <P>Wait Time Optimization</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Cross-Team Collaboration</h3>
+                                <P>Clinical & IT Stakeholders</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Data Validation</h3>
+                                <P>Accuracy & Consistency</P>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" 
+                            alt="Experience icon"
+                            class="icon"
+                            />
+                            <div>
+                                <h3>Operational Reporting</h3>
+                                <P>Decision Support</P>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location
+        .href='./#projects'"
+        />
     </section>
-    <!--end of contact section-->
-
-    <!--footer section-->
-
-    <section id="footer">
-        <div class="footer container">
-            <div class="brand"> 
-                <h1>
-                    <span>T</span>OYE <span>D</span>EVS
-                </h1>
+    <section id="projects">
+    <P class="section__text__p1">Browse My Recent</P>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <!--Project 1 -->
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="assets/webapp1-pic.png" 
+                alt="Project 1"
+                class="project-img"
+                />
             </div>
-            <h2> This website was created by David Adams,<br>Please feel free to contact me and share your thoughts.<br>THANK YOU!!</h2>
-
-            <div class="social-icon">
-                <div class="social-item">
-                    <a href="https://www.instagram.com/toyedevs/" target="_blank"><img src="images/IconInstagram.png"  alt="" ></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://www.linkedin.com/in/david-adams-197b5b266/" target="_blank"><img src="images/IconLinkedin.png" alt=""></a>
-                </div>
-                <div class="social-item">
-                    <a href="https://github.com/DavidAdams229" target="_blank"><img src="images/githublogo.png" alt=""></a>
-                </div>
+            <h2 class="experience-sub-title project-title">Frontend Web Application</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="location.href='https://github.com/DavidAdams229/Cinerec'"
+                ><!--Cinrec project github-->
+                    Source Code
+                </button>
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="location.href='https://cinerec.store/'"
+                ><!-- Cinrec project live link-->
+                    Launch App
+                </button>
+            </div>
+        </div>
+        <!--Project 2 -->
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="assets/dashboard-pic.png" 
+                alt="Project 2"
+                class="project-img"
+                />
+            </div>
+            <h2 class="project-sub-title project-title">Recent PowerBi Dashboard</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="window.open('./assets/Business Questions For Dashboard.pdf')">
+                        Context
+                </button>
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="location.href='https://app.powerbi.com/view?r=eyJrIjoiNDI2OTAwMzktNjk3OS00NzIxLWJkMjktYTJmZjk5N2FhMGY2IiwidCI6IjFjYTNhY2VlLTE2N2ItNDkyMC05OTExLTcwMGFjODY5YTg5ZiJ9'"
+                >
+                    Interact
+                </button>
+            </div>
+        </div>
+        <!--Project 3 -->
+        <div class="details-container color-container">
+            <div class="article-container">
+                <img src="assets/webapp2-pic.png" 
+                alt="Project 3"
+                class="project-img"
+                />
+            </div>
+            <h2 class="project-sub-title project-title">Portfolio Website</h2>
+            <div class="btn-container">
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="location.href='https://github.com'"
+                ><!-- Add Github link for Project-->
+                    Source Code
+                </button>
+                <!--
+                <button class="btn btn-color-2 
+                project-btn"
+                onclick="location.href='https://github.com'"
+                    Live Demo
+                </button>
+                -->
+            </div>
+        </div>
+        </div>
+    </div>
+        <img src="./assets/arrow.png" 
+        alt="Arrow Icon" 
+        class="icon arrow"
+        onclick="location
+        .href='./#contact'"
+        />
+    </section>
+    <section id="contact">
+        <p class="section__text__p1">Get In Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="assets/email.png" 
+                alt="Email icon"
+                class="icon contact-icon email-icon"
+                />
+                <p><a href="mailto:toyedevs@gmail.com">
+                Example@gmail.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="assets/linkedin.png" 
+                alt="linkedIn icon"
+                class="icon contact-icon"
+                />
+                <!--USE THIS IF NEED TO FOR SECOND BUTTON ON MAIN PAGE (REQUEST CV)-->
+                <p><a href="https://www.linkedin.com/in/david-adams-197b5b266/">
+                LinkedIn</a></p>
             </div>
         </div>
     </section>
-    <!--end of footer section-->
-
-    <script src="app.js"></script>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; David Adams. All rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
 </body>
-
 </html>
